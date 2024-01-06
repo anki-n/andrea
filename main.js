@@ -115,6 +115,7 @@ lightGallery(document.getElementById('lightgallery'), {
 });
 
 
+// Filterable gallery 
 $('#portfolio-filter span').click(function(){
     
   // Remove class 'active' from any <span> that is currently active 

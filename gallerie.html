@@ -4,13 +4,20 @@ title: Andrea Krämer
 banner_image: /images/wedding.jpg
 gallery:
    -
-      column-size: col-6
-      aspect-ratio: portrait
+      column-size: col-4
+      aspect-ratio: square
       background_image: /uploads/Naturstuecke.jpg
+      category: Radierungen
    -
-      column-size: col-6
-      aspect-ratio: portrait
+      column-size: col-4
+      aspect-ratio: square
       background_image: /uploads/header.png
+      category: Fotografien
+   -
+      column-size: col-4
+      aspect-ratio: square
+      background_image: /uploads/header.png
+      category: Drucke
 seo:
    title: Andrea Krämer
    description: 
@@ -32,11 +39,11 @@ seo:
 		<div class="portfolio-filter" id="portfolio-filter">
 			<span>ALL</span> 
 			<span>Radierungen</span> 
-			<span>Photografien</span> 
+			<span>Fotografien</span> 
 			<span>Drucke</span> 
 		</div>	
 
-         <div class="gallery grid-center filterable-gallery" id="lightgallery filterable-gallery">
+         <div class="gallery grid-center filterable-gallery" id="filterable-gallery">
             {% for item in page.gallery %}
 
             <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">

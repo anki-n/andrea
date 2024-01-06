@@ -290,6 +290,39 @@ a.bg-image { display: block;}
 }
 
 
+
+/* Filterable Gallery Styles   */
+
+.filterable-gallery .bg-image {
+    padding-bottom: 100%;
+}
+
+.filterable-gallery {
+    padding: 1rem;
+}
+
+.filterable-gallery [class*=col] {
+    padding: 0.1rem;
+}
+
+.hidden { display: none; }
+
+
+/* Filter navigation */
+.portfolio-filter span {
+    text-transform: uppercase; 
+    padding: 0.2rem;
+}
+
+.portfolio-filter span:hover {
+    cursor: pointer;
+}
+
+.portfolio-filter .active {
+    color: red;
+}
+
+
 /*--------------- Slider ----------------*/
 
 .slider-container {
