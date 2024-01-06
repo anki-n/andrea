@@ -647,7 +647,6 @@ textarea {
     font-size: 0.9rem;
     border: none;
     border: 2px solid var(--dark);
-    border-radius: 10px;
 }
 
 input:focus, 
@@ -665,7 +664,6 @@ form .button {
     background-color: var(--accent);
     color: var(--light);
     border: 2px solid var(--accent);
-    border-radius: 10px;
     margin-left: 0;
 }
 
