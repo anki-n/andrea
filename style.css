@@ -1,26 +1,38 @@
+/* Temporary Styles */
+/*
+header { border: 2px solid red; }
+section { border: 2px solid blue; }
+div { border: 2px solid orange; }
+footer {border: 2px solid green; } */
+
+
+
+/* ----------- CSS RESET --------- */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+  
 
 html {
-    scroll-behavior: smooth;
-  }
-  
-  img { max-width: 100%; height: auto; }  /* Otherwise CloudCannon might try to save aspect ratios, which can warp/ squish images when you upload i.e. a square & it makes it a portrait */ 
-  
-  /* Override default gridlex padding */ 
-  [class*=col] { padding: 0; }
-  [class*=grid] { margin: 0; }
-  
-  section { position: relative; }
+  scroll-behavior: smooth;
+}
+
+img { max-width: 100%; height: auto; }  /* Otherwise CloudCannon might try to save aspect ratios, which can warp/ squish images when you upload i.e. a square & it makes it a portrait */ 
+
+/* Override default gridlex padding */ 
+[class*=col] { padding: 0; }
+[class*=grid] { margin: 0; }
+
+section { position: relative; }
 
 
-  /* ---------- Fonts ------------------*/
+/* ---------- Fonts ------------------*/
 
 
-  /* ---------- Negative Space Utility Classes  ------------------ */ 
+/* ---------- Negative Space Utility Classes  ------------------ */ 
 
 .capped-width-wide        { max-width: 1600px; margin: auto; }
 .capped-width-medium-wide { max-width: 1400px; margin: auto; }
@@ -109,6 +121,52 @@ html {
 
 /* ------------------ Typography Styles ----------------------- */
 
+body {
+    font-family: 'Caudex', serif;  /* Add your font here */ 
+    font-weight: 500;
+    color: var(--dark);
+  }
+  
+h1 { 
+    font-size: 4rem; 
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+    margin-bottom: 0;
+}
+  
+p, li {
+    line-height: 1.4; 
+    margin-bottom: 1rem;
+    font-family: 'Caudex', serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+ul, ol {
+    list-style-position: outside;
+    margin-left: 1rem;
+}
+
+li {
+    padding-left: 0.5rem;
+}
+
+
+
 /* Unique Typography Styles  */
 
 .left         { text-align: left; }
@@ -120,6 +178,36 @@ html {
 .lowercase    { text-transform: lowercase; }
 .capitalize   { text-transform: capitalize; }
 
+.vertical-plus-90   { transform: rotate(90deg);  }
+.upside-down        { transform: rotate(180deg); }
+.vertical-minus-90  { transform: rotate(-90deg); }
+
+.text-xl    { font-size: 4rem;    }
+.text-lg    { font-size: 3rem;    }
+.text-md    { font-size: 2rem;    }
+.text-sm    { font-size: 1.5rem;  }
+
+
+.font-weight-light      { font-weight: 200;    }
+.font-weight-normal     { font-weight: normal; }
+.font-weight-bold       { font-weight: 600;    }
+.font-weight-extra-bold { font-weight: 800;    }
+
+.dark-text            { color: var(--dark);  }
+.light-text           { color: var(--light); }
+.accent-text          { color: var(--accent);}
+
+.subtle               { opacity: 0.8;       }
+.subtitle             { font-size: 0.8rem;  }  /* you might also wanna make that italic */
+.italic               { font-style: italic; }
+
+
+
+.quote-icon {
+    font-size: 4rem;
+    color: rgb(200,200,200);
+}
+  
 
 /* ------------ Position ------------------------------*/
 .static     { position: static;   }
@@ -130,11 +218,21 @@ html {
 
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
-
-.bg-dark-featured           { 
-    background-color: var(--dark-featured); 
+.bg-dark           { 
+    background-color: var(--dark); 
     color: var(--light);
 }
+
+.bg-light           { 
+    background-color: var(--light); 
+    color: var(--dark);
+}
+
+.bg-accent          { 
+    background-color: var(--accent); 
+    color: var(--light);
+}
+
 
 .bg-image {
     background-color: var(--accent); /* Set a fall-back color while images are loading */ 
@@ -142,6 +240,7 @@ html {
     background-position: center; 
     background-repeat: no-repeat;
 }
+
 
 /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
 
@@ -154,20 +253,17 @@ a.bg-image { display: block;}
 .square        { padding-bottom: 100%; }
 
 
-/* ------------------------- Banner ------------------------------*/
-.banner {
-    background-image: url('https://source.unsplash.com/random?sig=1');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 85vh;
-    padding: 5%;
+.flex-flip-alternate:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
+.bg-zoom:hover { background-size: 105%; }
 
-.banner a {
-    text-decoration: none;
-}
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
 
 
 /* Image Gallery -------------------------- */
@@ -253,6 +349,80 @@ border: 2px solid green;
 .slick-dots li.slick-active button::before {
     color: var(--accent);
 }
+  
+
+/* ------------- Testimonials ------------- */
+
+
+
+/* ------------- Overlays --------------- */
+/* Full overlay ------*/
+.bg-overlay {
+    position: relative;
+}
+
+.bg-overlay::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.bg-overlay > * {
+    position: relative;
+}
+
+/* Half overlay ------*/
+.bg-overlay-half {
+    position: relative;
+}
+
+.bg-overlay-half::before {
+    content: ""; 
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    width: 45%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.bg-overlay-half > * {
+    position: relative;
+} 
+
+
+/* Add a second class to change the color or style  */
+
+.bg-overlay-gradient::after { 
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+} 
+
+.bg-overlay-featured::after { 
+    background-color: var(--featured);
+    opacity: 0.5;
+} 
+
+
+
+/* ------------------------- Banner ------------------------------*/
+.banner {
+    background-image: url('https://source.unsplash.com/random?sig=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5%;
+}
+
+
+.banner a {
+    text-decoration: none;
+}
+
 
 
 /* ------------ Buttons & Links ------------ */
@@ -277,20 +447,36 @@ ul a {
 }
 
 
-.button-light { 
+.button-dark { 
     display: inline-block;
     text-decoration: none;
     line-height: 1;
     padding: 0.5rem 1.5rem;
-    background-color: var(--accent);
+    background-color: var(--dark);
     color: var(--light);
-    border: 1px solid var(--accent);
+    border: 1px solid var(--dark);
     border-radius: 5px;
 }
 
-.button-light:hover {
+.button-dark:hover {
     background-color: var(--light);
-    color: var(--accent);
+    color: var(--dark);
+}
+
+
+.top-button {
+    background-color: var(--accent);
+    color: var(--light);
+    font-size: 1.5rem;
+    position: fixed;
+    padding: 0.5rem;
+    bottom: 0;
+    right: 0;
+}
+
+.top-button:hover {
+    color: var(--light);
+    border: 2px solid var(--accent);
 }
 
 
@@ -300,6 +486,17 @@ button {
     font-size: 1rem;
     margin: 0.5rem;
 }
+
+.socials {
+    font-size: 1.3rem;
+}
+
+.socials a {
+    padding: 1rem;
+}
+
+/* suggested additional styles 
+- .button-inverted, .button-subtle, .button-lg  */
 
 
 /* ------------ Header & Hamburger Menu -------------- */
@@ -331,6 +528,9 @@ header nav a {
 header nav a:hover {
   border-bottom: 1px solid var(--light);
 }
+
+
+.bg-color-none { background-color: inherit; }
 
 /*------------- Dropdown styles ---------------*/
 
@@ -410,6 +610,13 @@ header nav a:hover {
     display: block;
     font-weight: normal;
     border-bottom: 1px solid var(--dark);
+}
+
+
+.mobile-menu a:hover {
+    border-bottom: 1px solid var(--light);
+}
+
 
 
 /* ----------- Footer Styles ------------------------ */
@@ -426,6 +633,7 @@ footer nav a {
 footer a:hover {
     color: var(--light);
 }
+
 
 
 /* ------------ Contact Forms  ----------------------- */
@@ -449,6 +657,7 @@ textarea:focus {
 }
 
 form .button {
+    font-family: 'Caudex', serif;
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 1;
@@ -469,6 +678,11 @@ form .button:hover {
     background-color: var(--light);
     color: var(--accent);
 }
+
+
+/* ------------- Miscelaneous elements  ------------------*/
+
+
 
 /* -------------  Cookie Banner ---------------------------*/
 
@@ -526,6 +740,9 @@ form .button:hover {
 }
 
 
+/* ------------ Page Name  -------------------------------------------------- */
+
+
 /* ------------ Responsive Styles ------------------------------------------- */
 
 /* General CSS Responsive Styles (Apply everywhere unless overriden) */ 
@@ -580,9 +797,7 @@ form .button:hover {
     .md-margin-t-2 { margin-top: 2rem; }
     .md-margin-b-2 { margin-bottom: 2rem; }
 
-
     .slick-dots { bottom: -3%; }
-
 
     .capped-width {
         max-width: 4000px; 
@@ -647,7 +862,6 @@ form .button:hover {
 
     .slick-dots { bottom: -5%; }
 
-
 }
 
 
@@ -664,7 +878,6 @@ form .button:hover {
     .padded     { padding: 7%; }
     .sm-padded  { padding: 7%; }
     .md-padded  { padding: 7%; }
-    
 
     .justify { text-align: left; }
 
@@ -676,4 +889,4 @@ form .button:hover {
     overflow-x: auto;
     flex-wrap: nowrap;
   } 
-}
+} 
