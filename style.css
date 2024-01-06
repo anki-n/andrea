@@ -3,3 +3,677 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  img { max-width: 100%; height: auto; }  /* Otherwise CloudCannon might try to save aspect ratios, which can warp/ squish images when you upload i.e. a square & it makes it a portrait */ 
+  
+  /* Override default gridlex padding */ 
+  [class*=col] { padding: 0; }
+  [class*=grid] { margin: 0; }
+  
+  section { position: relative; }
+
+
+  /* ---------- Fonts ------------------*/
+
+
+  /* ---------- Negative Space Utility Classes  ------------------ */ 
+
+.capped-width-wide        { max-width: 1600px; margin: auto; }
+.capped-width-medium-wide { max-width: 1400px; margin: auto; }
+.capped-width             { max-width: 1200px; margin: auto; }
+.capped-width-narrow      { max-width: 1000px; margin: auto; }
+.capped-width-v-narrow    { max-width: 800px;  margin: auto; }
+
+
+.tall-100 { min-height: 100vh; }
+.tall-90  { min-height: 90vh; }
+.tall-80  { min-height: 80vh; }
+.tall-70  { min-height: 70vh; }
+.tall-60  { min-height: 60vh; }
+.tall-50  { min-height: 50vh; }
+
+
+/* Padding Utility Classes */ 
+.padded-sm { padding: 2.5%; }
+.padded    { padding: 5%;   }
+.padded-lg { padding: 10%;  }
+
+.padded-0  { padding: 0;      }
+.padded-05 { padding: 0.5rem; }
+.padded-1  { padding: 1rem;   }
+.padded-2  { padding: 2rem;   }
+
+.padded-t  { padding-top: 5%;    }
+.padded-b  { padding-bottom: 5%; }
+.padded-l  { padding-left: 5%;   }
+.padded-r  { padding-right: 5%;  }
+
+.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr  { padding-left: 5%; padding-right: 5%; }
+
+.padded-tb-1  { padding-top: 5%; padding-bottom: 1rem; }
+.padded-lr-1  { padding-left: 5%; padding-right: 1rem; }
+
+.padded-t-0 { padding-top: 0;    }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0;   }
+.padded-r-0 { padding-right: 0;  }
+
+.padded-t-1 { padding-top: 1rem;    }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem;   }
+.padded-r-1 { padding-right: 1rem;  }
+
+.padded-t-2 { padding-top: 2rem;    }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem;   }
+.padded-r-2 { padding-right: 2rem;  }
+
+
+/* Margin Utility Classes */ 
+
+.margin-t { margin-top: 5%;     }
+.margin-b { margin-bottom: 5%;  }
+.margin-l { margin-left: 5%;    }
+.margin-r { margin-right: 5%;   }
+
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+
+.margin-0   { margin: 0; }
+
+.margin-t-0 { margin-top: 0;    }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0;   }
+.margin-r-0 { margin-right: 0;  }
+
+.margin-t-05 { margin-top: 0.5rem;    }
+.margin-b-05 { margin-bottom: 0.5rem; }
+.margin-l-05 { margin-left: 0.5rem;   }
+.margin-r-05 { margin-right: 0.5rem;  }
+
+.margin-t-1 { margin-top: 1rem;    }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem;   }
+.margin-r-1 { margin-right: 1rem;  }
+
+.margin-t-2 { margin-top: 2rem;    }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem;   }
+.margin-r-2 { margin-right: 2rem;  }
+
+
+/* ------------------ Typography Styles ----------------------- */
+
+/* Unique Typography Styles  */
+
+.left         { text-align: left; }
+.right        { text-align: right; }
+.center       { text-align: center; }
+.justify      { text-align: justify; }
+
+.uppercase    { text-transform: uppercase; }
+.lowercase    { text-transform: lowercase; }
+.capitalize   { text-transform: capitalize; }
+
+
+/* ------------ Position ------------------------------*/
+.static     { position: static;   }
+.relative   { position: relative; }
+.absolute   { position: absolute; }
+.fixed      { position: fixed;    }
+.sticky     { position: sticky;   }
+
+
+/* ------------ Backgrounds & Background Images  ----------------------- */
+
+.bg-dark-featured           { 
+    background-color: var(--dark-featured); 
+    color: var(--light);
+}
+
+.bg-image {
+    background-color: var(--accent); /* Set a fall-back color while images are loading */ 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
+
+a.bg-image { display: block;}
+
+.landscape-small { padding-bottom: 50%; }
+.landscape     { padding-bottom: 66%;  }
+.portrait-tall { padding-bottom: 175%; }
+.portrait      { padding-bottom: 125%; }
+.square        { padding-bottom: 100%; }
+
+
+/* ------------------------- Banner ------------------------------*/
+.banner {
+    background-image: url('https://source.unsplash.com/random?sig=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 85vh;
+    padding: 5%;
+}
+
+
+.banner a {
+    text-decoration: none;
+}
+
+
+/* Image Gallery -------------------------- */
+
+.gallery [class*="col-"] {
+    padding: 0.5%;
+}
+  
+.gallery .gallery-item {
+    border-bottom: none;
+}
+  
+/* Background of gallery when active */
+.lg-backdrop {
+    background-color: rgb(20,20,20);
+}
+  
+.lg-backdrop.in {
+    opacity: 0.95;
+}
+  
+.lg-sub-html {
+    background-color: rgba(20, 20, 20, 0.95);
+}
+
+
+/*--------------- Slider ----------------*/
+
+.slider-container {
+    padding: 5%;
+}
+
+.slider-item {
+    /*padding: 0.5rem;*/
+    /* border: 2px solid orange; */
+    display: none;
+    border: none;
+    background-color: var(--light);
+}
+
+.slider-item:first-child {
+    display: block;
+}
+
+/* .slider-item:nth-child(odd) {
+padding: 1rem;
+border: 2px solid green;
+} */
+
+.slick-prev {
+    left: 2%;
+    margin-left: -1.5rem;
+}
+
+.slick-next {
+    right: 2%;
+    margin-right: -1.5rem;
+}
+
+.slick-next::before, .slick-prev::before {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: black;
+}
+
+.slick-dots {
+    bottom: 3%;
+    left: 0; /* This align the dots perfectly to the center, do not delete */
+}
+
+.slick-dots li,
+.slick-dots li button {
+    width: 10px;
+}
+
+.slick-dots li button::before {
+    font-size: 8px;
+    color: var(--dark);
+}
+
+.slick-dots li.slick-active button::before {
+    color: var(--accent);
+}
+
+
+/* ------------ Buttons & Links ------------ */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+p a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+p a:hover { 
+    color: var(--accent); 
+}
+
+ul a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.button-light { 
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--accent);
+    color: var(--light);
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+}
+
+.button-light:hover {
+    background-color: var(--light);
+    color: var(--accent);
+}
+
+
+button {
+    cursor: pointer;
+    font-family: 'Caudex', serif;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+
+/* ------------ Header & Hamburger Menu -------------- */
+header {
+    padding: 1rem 5%;
+}
+
+header a:hover {
+  color: var(--light);
+}
+
+nav a {
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.3rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+nav a:hover {
+  color: var(--light);
+}
+
+header nav a {
+  border-bottom: 1px solid var(--dark);
+  text-transform: uppercase;
+}
+
+header nav a:hover {
+  border-bottom: 1px solid var(--light);
+}
+
+/*------------- Dropdown styles ---------------*/
+
+.dropdown { 
+    position: relative; 
+    display: inline-block;
+    /* border: 1px solid orange; */
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: -0.2rem;
+    padding: 0.5rem;
+    display:none; 
+    background-color: var(--dark);
+    z-index: 2;
+    text-align: left;
+    min-width: 10rem;
+  }
+  
+  .dropdown:hover .dropdown-content{ 
+    display: block;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 0.2rem;
+  }
+
+/* ------------ Hamburger ----------*/
+
+.hamburger-button {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    position: fixed;
+    right: 5%;
+    top: 0rem;
+    z-index: 4;
+  }
+  
+  /* Styles when the hamburger button is active  */
+  .hamburger-button::before {
+    content: "☰";
+    color: var(--light);
+ }
+ 
+  .hamburger-button.active::before {
+   content: "✕";
+   color: var(--light);
+ }
+  
+  
+.mobile-menu {
+    display: none; 
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 15%;
+    position: fixed; 
+    z-index:3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+  
+.mobile-menu a {
+    text-decoration: none; 
+    font-size: 1.3rem;
+    color: inherit; 
+    padding: 3%;
+    display: block;
+    font-weight: normal;
+    border-bottom: 1px solid var(--dark);
+
+
+/* ----------- Footer Styles ------------------------ */
+footer {
+    padding: 5%;
+    padding-bottom: 0.5rem;
+}
+
+footer nav a {
+    display:block;
+    padding: 0.25rem;
+}
+
+footer a:hover {
+    color: var(--light);
+}
+
+
+/* ------------ Contact Forms  ----------------------- */
+input,
+textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border: none;
+    border: 2px solid var(--dark);
+    border-radius: 10px;
+}
+
+input:focus, 
+textarea:focus {
+    outline: none;
+    border: 2px solid var(--accent); 
+}
+
+form .button {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--accent);
+    color: var(--light);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    margin-left: 0;
+}
+
+form .button:focus {
+    background-color: var(--light);
+    color: var(--accent);
+}
+
+form .button:hover {
+    background-color: var(--light);
+    color: var(--accent);
+}
+
+/* -------------  Cookie Banner ---------------------------*/
+
+#cookie-notice {
+    padding: 0.5rem 1rem;
+    display: none;
+    line-height: 2;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #222;
+    color: rgba(255,255,255,0.8);
+}
+
+#cookie-notice a {
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+#cookie-notice .button-subtle {
+    opacity: 0.8;
+}
+
+#cookie-notice .button-subtle:hover {
+    color: rgba(255,255,255);
+}
+
+#cookie-notice .button {
+    background: #222;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.8);
+    opacity: 0.8;
+    padding: 0.5rem 1.5rem;
+}
+
+#cookie-notice .button:hover {
+    background: rgba(255,255,255,0.8);
+    color: #222;
+    border: 1px solid #222;
+}
+
+#close-cookie-banner {
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    opacity: 0.5
+}
+
+#close-cookie-banner:hover {
+    color: rgba(255,255,255);
+}
+
+
+/* ------------ Responsive Styles ------------------------------------------- */
+
+/* General CSS Responsive Styles (Apply everywhere unless overriden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none; 
+}
+
+.inline { 
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:64em) {
+
+    .show-md { display: block; }
+	.hide-md { display: none;  }
+
+    .md-center { text-align: center; }
+    .md-left   { text-align: left; }
+    .md-right  { text-align: right; }
+
+    .md-padded     { padding: 5%; }
+    .md-padded-05  { padding: 0.5rem; }
+    .md-padded-1   { padding: 1rem; }
+    .md-padded-2   { padding: 2rem; }
+ 
+    .md-padded-lr  { padding-left: 5%; padding-right: 5%; }
+
+    .md-padded-t-0 { padding-top: 0; }
+    .md-padded-b-0 { padding-bottom: 0; }
+
+    .md-padded-t-1 { padding-top: 1rem; }
+    .md-padded-b-1 { padding-bottom: 1rem; }
+
+    .md-padded-t-2 { padding-top: 2rem; }
+    .md-padded-b-2 { padding-bottom: 2rem; }
+
+    .md-margin-t-0 { margin-top: 0; }
+    .md-margin-b-0 { margin-bottom: 0; }
+
+    .md-margin-t-1 { margin-top: 1rem; }
+    .md-margin-b-1 { margin-bottom: 1rem; }
+
+    .md-margin-t-2 { margin-top: 2rem; }
+    .md-margin-b-2 { margin-bottom: 2rem; }
+
+
+    .slick-dots { bottom: -3%; }
+
+
+    .capped-width {
+        max-width: 4000px; 
+        margin: auto;
+    }
+
+
+}
+
+
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+
+@media(max-width:48em) {
+
+	.show-sm { display: block; }
+	.hide-sm { display: none;  }
+
+    .sm-center { text-align: center; }
+    .sm-left   { text-align: left; }
+    .sm-right  { text-align: right; }
+
+    .sm-padded-0   { padding: 0; }
+    .sm-padded     { padding: 5%; }
+    .sm-padded-1   { padding: 1rem; }
+    .sm-padded-05  { padding: 0.5rem; }
+
+    .sm-margin-tb  { 
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .sm-padded-t-0 { padding-top: 0; }
+    .sm-padded-b-0 { padding-bottom: 0; }
+
+    .sm-margin-t-0 { margin-top: 0; }
+    .sm-margin-b-0 { margin-bottom: 0; }
+
+    .sm-padded-t-1 { padding-top: 1rem; }
+    .sm-padded-b-1 { padding-bottom: 1rem; }
+
+    .sm-margin-t-1 { margin-top: 1rem; }
+    .sm-margin-b-1 { margin-bottom: 1rem; }
+
+    .sm-padded-t-2 { padding-top: 2rem; }
+    .sm-padded-b-2 { padding-bottom: 2rem; }
+
+    .sm-margin-t-2 { margin-top: 2rem; }
+    .sm-margin-b-2 { margin-bottom: 2rem; }
+
+    .sm-margin-t { margin-top: 10%; }
+    .sm-margin-b { margin-bottom: 10%; }
+
+    .sm-landscape     { padding-bottom: 66% ; }
+    .sm-portrait-tall { padding-bottom: 175%; }
+    .sm-portrait      { padding-bottom: 125%; }
+    .sm-square        { padding-bottom: 100%; }
+
+    .flex-flip-sm { flex-direction: column-reverse; }
+
+    .slick-dots { bottom: -5%; }
+
+
+}
+
+
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:36em) {
+
+	.show-xs { display: block; }
+	.hide-xs { display: none;  }
+    
+
+    .padded     { padding: 7%; }
+    .sm-padded  { padding: 7%; }
+    .md-padded  { padding: 7%; }
+    
+
+    .justify { text-align: left; }
+
+}
+
+
+@media(min-width: 36em) {
+  .horizontal-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  } 
+}
