@@ -1,0 +1,56 @@
+---
+layout: default
+title: Andrea Krämer Gallerie
+gallery:
+   -  column-size: col-6
+	  aspect-ratio: portrait
+	  background_image: /uploads/header.png
+	  category: radierungen
+   -  column-size: col-6
+	  aspect-ratio: portrait
+	  background_image: /uploads/Naturstuecke.jpg
+	  category: fotografien
+seo:
+   title: Andrea Krämer Gallerie
+   description: 
+   social_image:
+   twitter_card:
+   keywords:
+   hide-from-google: false
+---
+
+<!-- Popup Gallery -->
+<section class="padded">
+    
+    <div class="capped-width">
+
+		<div class="center padded-b">
+			<h2 class="editable uppercase"> Gallerie </h2>
+		</div>
+
+		<div class="portfolio-filter" id="portfolio-filter">
+			<span>ALL</span> 
+			<span>Radierungen</span> 
+			<span>Photografien</span> 
+			<span>Drucke</span> 
+		</div>	
+
+         <div class="gallery grid-center filterable-gallery" id="lightgallery filterable-gallery">
+            {% for item in page.gallery %}
+
+            <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
+                  <div class="bg-image lazy {{item.aspect-ratio}} {{item.category}}" style="background-image: url('{{item.background_image}}');">
+                  </div>
+            </a>
+
+            {% endfor %}
+         </div>
+    </div>
+
+</section>
+
+<div class="grid-center filterable-gallery" id="filterable-gallery">
+	<div class="col-4_sm-6_xs-12 gallery-item type-1 type-2 type-3">
+		  <div class="bg-image"></div>
+	</div>
+</div> 
