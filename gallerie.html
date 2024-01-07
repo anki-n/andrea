@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Andrea Krämer
+title: Andrea Krämer Gallerie
 banner_image: /images/wedding.jpg
 gallery:
    -
@@ -19,7 +19,7 @@ gallery:
       background_image: /uploads/blue.png
       category: radierungen
 seo:
-   title: Andrea Krämer
+   title: Andrea Krämer Gallerie
    description: 
    social_image:
    twitter_card:
@@ -46,63 +46,7 @@ seo:
    		<div class="bg-image lazy {{item.aspect-ratio}} {{item.category}}" style="background-image: url('{{item.background_image}}');"></div>
  	   </a>
 
-      <!--a class="{{item.column-size}} gallery-item {{item.category}}" href="{{item.background_image}}">
-         <div class="bg-image lazy {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');">
-         </div>
-      </a-->
- 
       {% endfor %}
  
    </div>
 </section>
-
-
-
-<!-- Popup Gallery -->
-<!--section class="padded">
-    
-    <div class="capped-width">
-
-		<div class="center padded-b">
-			<h2 class="editable uppercase"> Gallerie </h2>
-		</div>
-
-		<div class="portfolio-filter" id="portfolio-filter">
-			<span>ALL</span> 
-			<span>type 1</span> 
-			<span>Fotografien</span> 
-			<span>Drucke</span> 
-		</div>	
-
-         <div class="gallery grid-center filterable-gallery" id="lightgallery">
-            {% for item in page.gallery %}
-
-            <a class="{{item.column-size}} gallery-item {{item.category}}" href="{{item.background_image}}">
-                  <div class="bg-image lazy {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');">
-                  </div>
-            </a>
-
-            {% endfor %}
-         </div>
-    </div>
-
-</section>
-
-<section class="padded">
-   <div class="portfolio-filter" id="portfolio-filter">
-      <span>ALL</span> 
-      <span>type 1</span> 
-      <span>type 2</span> 
-      <span>type 3</span> 
-   </div>
-
-   <div class="grid-center filterable-gallery" id="filterable-gallery">
-      {% for item in page.gallery %}
-
-      <a class="{{item.column-size}} gallery-item {{item.category}}" href="{{item.background_image}}">
-         <div class="bg-image" style="background-image: url('{{item.background_image}}');"></div>
-      </a>
-
-      {% endfor %}
-   </div> 
-</section-->

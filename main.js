@@ -114,6 +114,7 @@ lightGallery(document.getElementById('lightgallery'), {
     download: false
 });
 
+
 // Filterable gallery
 $('#portfolio-filter span').click(function(){
     
