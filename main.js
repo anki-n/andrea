@@ -114,8 +114,7 @@ lightGallery(document.getElementById('lightgallery'), {
     download: false
 });
 
-
-// Filterable gallery 
+// Filterable gallery
 $('#portfolio-filter span').click(function(){
     
   // Remove class 'active' from any <span> that is currently active 
@@ -131,10 +130,10 @@ $('#portfolio-filter span').click(function(){
   console.log ('filterVal has been set ' + filterVal);
 
   // This is something new, it's an 'each' function which basically iterates through each element that matches the selector and applies the function one by one.
-  $('#filterable-gallery .gallery-item').each(function() {
+  $('#lightgallery .gallery-item').each(function() {
     
     // If the filter value that they have clicked on is 'all' then remove the class of hidden from each gallery-item. 
-    if (filterVal == 'all') {
+    if (filterVal == 'alle') {
       $(this).removeClass('hidden');
       //console log
       console.log ('removed class of hidden because set to view all');
@@ -153,7 +152,6 @@ $('#portfolio-filter span').click(function(){
     }
   });
 });
-
 
 
 // Slick Carousel
@@ -190,4 +188,3 @@ $('.slider-container').slick({
     }
   ]
 });
-

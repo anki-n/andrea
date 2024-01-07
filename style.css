@@ -311,7 +311,8 @@ a.bg-image { display: block;}
 /* Filter navigation */
 .portfolio-filter span {
     text-transform: uppercase; 
-    padding: 0.2rem;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--dark);
 }
 
 .portfolio-filter span:hover {
@@ -319,7 +320,8 @@ a.bg-image { display: block;}
 }
 
 .portfolio-filter .active {
-    color: red;
+    color: var(--light);
+    background-color: var(--dark);
 }
 
 
