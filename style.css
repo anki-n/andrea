@@ -55,6 +55,7 @@ section { position: relative; }
 .padded-lg { padding: 10%;  }
 
 .padded-0  { padding: 0;      }
+.padded-02 { padding: 0.2rem; }
 .padded-05 { padding: 0.5rem; }
 .padded-1  { padding: 1rem;   }
 .padded-2  { padding: 2rem;   }

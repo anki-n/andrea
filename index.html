@@ -86,14 +86,15 @@ seo:
 
 
 <!-------------------------- Kollektionen ------------------------------------------->
-<section class="grid padded">
-    <h2 class="col-12 text-md"> Kollektionen </h2>
-    <div class="grid col-12">
-        <h3 class="editable text-sm">Käfer</h3>
+<section class="grid center padded">
+    <h2 class="col-12 text-md padded-b-2"> Kollektionen </h2>
+
+    <h3 class="editable text-sm">Käfer</h3>
+    <div class="grid col-12 horizontal-scroll">
 
         {% for item in page.kaefer %}
 
-        <div class="col-2">
+        <div class="col-2 padded-02">
             <div class="bg-image lazy portrait" style="background-image: url('{{item.background_image}}');"></div>
         </div>
 
@@ -105,7 +106,7 @@ seo:
 
 
 <!-------------------------- Gallerie ----------------------------------------------->
-<section class="grid center padded">
+<section class="grid center padded bg-dark">
     <div class="col-12 grid">
         {% for item in page.gallery %}
         
