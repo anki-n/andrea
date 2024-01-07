@@ -201,9 +201,9 @@ li {
 .subtitle             { font-size: 0.8rem;  }  /* you might also wanna make that italic */
 .italic               { font-style: italic; }
 
-.border-l { 
-    border-left: 2px solid var(--dark);
-    padding: 1rem;
+.border { 
+    border: 2px solid var(--dark);
+    padding: 1.5rem;
 }
 
 .quote-icon {
