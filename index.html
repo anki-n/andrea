@@ -21,6 +21,23 @@ gallery:
       background_image: /uploads/header.png
    -
       background_image: /uploads/blue.png
+kaefer:
+   -
+      background_image: /uploads/Naturstuecke.jpg
+   -
+      background_image: /uploads/header.png
+   -
+      background_image: /uploads/blue.png
+   -
+      background_image: /uploads/Naturstuecke.jpg
+   -
+      background_image: /uploads/header.png
+   -
+      background_image: /uploads/blue.png
+   -
+      background_image: /uploads/header.png
+   -
+      background_image: /uploads/blue.png
 seo:
    title: Andrea Krämer Homepage
    description: 
@@ -57,7 +74,7 @@ seo:
     </div>
 </section>
 
-<section class="grid-middle-spaceAround center bg-image padded" style="background-image: url('{{page.ausstellung_image}}');">
+<!--section class="grid-middle-spaceAround center bg-image padded" style="background-image: url('{{page.ausstellung_image}}');">
     <div class="col-6_md-8_sm-10 padded-2 bg-light">
         <h2 class="editable text-md padded-b-2"> Nächste Ausstellung</h2>
         <p class="editable"> Art Spring und Offener Ateliergarten </p>
@@ -65,10 +82,26 @@ seo:
         <p class="editable"> Basteiweg 45, 13158 Berlin </p>
         <a href="https://www.artspring.berlin/kuenstler/" target="_blank"> www.artspring.berlin/kuenstler </a>
     </div>
-</section>
+</section-->
 
 
 <!-------------------------- Kollektionen ------------------------------------------->
+<section class="grid padded">
+    <h2 class="col-12 text-md"> Kollektionen </h2>
+    <div class="grid col-12">
+        <h3 class="editable text-sm">Käfer</h3>
+
+        {% for item in page.kaefer %}
+
+        <div class="col-2">
+            <div class="bg-image lazy portrait" style="background-image: url('{{item.background_image}}');"></div>
+        </div>
+
+        {% endfor %}
+
+    </div>
+</section>
+
 
 
 <!-------------------------- Gallerie ----------------------------------------------->
