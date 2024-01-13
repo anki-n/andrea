@@ -225,7 +225,7 @@ li {
 .kollektion-parent { position: relative; }
 .kollektion-child { 
     position: absolute;
-    top: 0; 
+    bottom: 1px; 
 }
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
