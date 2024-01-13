@@ -55,7 +55,6 @@ section { position: relative; }
 .padded-lg { padding: 10%;  }
 
 .padded-0  { padding: 0;      }
-.padded-02 { padding: 0.2rem; }
 .padded-05 { padding: 0.5rem; }
 .padded-1  { padding: 1rem;   }
 .padded-2  { padding: 2rem;   }
@@ -100,6 +99,7 @@ section { position: relative; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
 .margin-0   { margin: 0; }
+.margin-05 { margin: 0.5rem; }
 
 .margin-t-0 { margin-top: 0;    }
 .margin-b-0 { margin-bottom: 0; }
@@ -222,6 +222,11 @@ li {
 .fixed      { position: fixed;    }
 .sticky     { position: sticky;   }
 
+.kollektion-parent { position: relative; }
+.kollektion-child { 
+    position: absolute;
+    top: 0; 
+}
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 .bg-dark           { 
