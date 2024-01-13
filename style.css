@@ -76,6 +76,8 @@ section { position: relative; }
 .padded-l-0 { padding-left: 0;   }
 .padded-r-0 { padding-right: 0;  }
 
+.padded-r-05 { padding-right: 0.5;  }
+
 .padded-t-1 { padding-top: 1rem;    }
 .padded-b-1 { padding-bottom: 1rem; }
 .padded-l-1 { padding-left: 1rem;   }
@@ -668,12 +670,12 @@ footer {
 footer nav a {
     display:block;
     padding: 1rem;
+    text-decoration: none;
 }
 
 footer a:hover {
     color: var(--accent);
 }
-
 
 
 /* ------------ Contact Forms  ----------------------- */
