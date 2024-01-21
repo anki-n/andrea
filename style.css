@@ -222,6 +222,7 @@ li {
 .fixed      { position: fixed;    }
 .sticky     { position: sticky;   }
 
+
 .kollektion-parent { position: relative; }
 .kollektion-child { 
     position: absolute;
@@ -268,7 +269,7 @@ a.bg-image { display: block;}
     flex-direction: row-reverse;
 }
 
-.bg-zoom:hover { background-size: 105%; }
+.bg-zoom:hover { background-size: 165%; }
 
 /* Background Position */
 .bg-pos-t { background-position: top; }
@@ -787,7 +788,11 @@ form .button:hover {
 
 
 /* ------------ Page Name  -------------------------------------------------- */
-
+.gallery-absolute {
+    position: absolute;
+    bottom: 46%;
+    width: 100%;
+}
 
 /* ------------ Responsive Styles ------------------------------------------- */
 
