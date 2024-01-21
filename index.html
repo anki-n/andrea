@@ -1,70 +1,70 @@
 ---
 layout: default
-title: Andrea Krämer Homepage
-banner_image: /uploads/Naturstuecke.jpg
-banner-mob_image: /uploads/Naturstuecke.jpg
-ausstellung_image: /uploads/blue.png
+title: Artist Name Homepage
+banner_image: /uploads/artist-1.jpg
+banner-mob_image: /uploads/artist-1.jpg
+ausstellung_image: /uploads/artist-3.jpg
 gallery:
    -
-      background_image: /uploads/Naturstuecke.jpg
+      background_image: /uploads/artist-1.jpg
    -
-      background_image: /uploads/header.png
+      background_image: /uploads/artist-2.jpg
    -
-      background_image: /uploads/blue.png
+      background_image: /uploads/artist-3.jpg
    -
-      background_image: /uploads/Naturstuecke.jpg
+      background_image: /uploads/artist-4.jpg
    -
-      background_image: /uploads/header.png
+      background_image: /uploads/artist-4.jpg
    -
-      background_image: /uploads/blue.png
+      background_image: /uploads/artist-3.jpg
    -
-      background_image: /uploads/header.png
+      background_image: /uploads/artist-2.jpg
    -
-      background_image: /uploads/blue.png
+      background_image: /uploads/artist-1.jpg
 kaefer:
    -
-      background_image: /uploads/Naturstuecke.jpg
+      background_image: /uploads/artist-1.jpg
    -
-      background_image: /uploads/header.png
+      background_image: /uploads/artist-2.jpg
    -
-      background_image: /uploads/blue.png
+      background_image: /uploads/artist-3.jpg
    -
-      background_image: /uploads/Naturstuecke.jpg
+      background_image: /uploads/artist-4.jpg
    -
-      background_image: /uploads/header.png
+      background_image: /uploads/artist-1.jpg
    -
-      background_image: /uploads/blue.png
+      background_image: /uploads/artist-2.jpg
    -
-      background_image: /uploads/header.png
+      background_image: /uploads/artist-3.jpg
    -
-      background_image: /uploads/blue.png
+      background_image: /uploads/artist-4.jpg
 drucke:
       -
-         background_image: /uploads/Naturstuecke.jpg
+         background_image: /uploads/artist-1.jpg
          aspect-ratio: portrait
       -
-         background_image: /uploads/header.png
+         background_image: /uploads/artist-2.jpg
          aspect-ratio: square
       -
-         background_image: /uploads/blue.png
+         background_image: /uploads/artist-3.jpg
          aspect-ratio: landscape
       -
-         background_image: /uploads/Naturstuecke.jpg
+         background_image: /uploads/artist-4.jpg
          aspect-ratio: square
       -
-         background_image: /uploads/header.png
+         background_image: /uploads/artist-1.jpg
          aspect-ratio: portrait
       -
-         background_image: /uploads/blue.png
+         background_image: /uploads/artist-2.jpg
          aspect-ratio: square
       -
-         background_image: /uploads/header.png
+         background_image: /uploads/artist-3.jpg
          aspect-ratio: landscape
       -
-         background_image: /uploads/blue.png
+         background_image: /uploads/artist-4.jpg
          aspect-ratio: portrait
 seo:
-   title: Andrea Krämer Homepage
+   title: Artist Name Homepage
    description: 
    social_image:
    twitter_card:
@@ -73,7 +73,7 @@ seo:
 ---
 <!---------------------------- Hero Banner ------------------------------------------>
 <section class="grid-middle banner banner-image tall-70 center">
-    <h1 class="col-12 editable light-text">Andrea Krämer</h1>
+    <h1 class="col-12 editable light-text">Artist Name</h1>
 </section>
 
 <style> 
@@ -92,34 +92,34 @@ seo:
 <section class="grid-spaceAround padded center">
     <div class="col-6_md-8_sm-12 padded-1 border">
         <p class="editable"> Nächste Ausstellung: </p>
-        <h2 class="editable text-md">Art Spring und Offener Ateliergarten</h2>
-        <p class="editable"> Bei Sandra Schmidt </p>
-        <p class="editable"> Basteiweg 45, 13158 Berlin </p>
-        <a href="https://www.artspring.berlin/kuenstler/" target="_blank"> www.artspring.berlin/kuenstler </a>
+        <h2 class="editable text-md">Ausstellung Name</h2>
+        <p class="editable"> Location Name </p>
+        <p class="editable"> Straße 23, 05932 Stadt </p>
+        <a href="https://www.artspring.berlin/kuenstler/" target="_blank"> www.eventname.de </a>
     </div>
 </section>
 
-<!--section class="grid-middle-spaceAround center bg-image padded" style="background-image: url('{{page.ausstellung_image}}');">
-    <div class="col-6_md-8_sm-10 padded-2 bg-light">
-        <h2 class="editable text-md padded-b-2"> Nächste Ausstellung</h2>
-        <p class="editable"> Art Spring und Offener Ateliergarten </p>
-        <p class="editable"> bei Sandra Schmidt </p>
-        <p class="editable"> Basteiweg 45, 13158 Berlin </p>
-        <a href="https://www.artspring.berlin/kuenstler/" target="_blank"> www.artspring.berlin/kuenstler </a>
-    </div>
+<!--section class="grid-spaceAround padded center">
+   <div class="col-6_md-8_sm-12 padded-1 border">
+       <p class="editable"> Nächste Ausstellung: </p>
+       <h2 class="editable text-md">Art Spring und Offener Ateliergarten</h2>
+       <p class="editable"> Bei Sandra Schmidt </p>
+       <p class="editable"> Basteiweg 45, 13158 Berlin </p>
+       <a href="https://www.artspring.berlin/kuenstler/" target="_blank"> www.artspring.berlin/kuenstler </a>
+   </div>
 </section-->
 
 
 <!-------------------------- Kollektionen ------------------------------------------->
-<section class="grid center padded bg-dark">
-    <h2 class="col-12 text-md padded-b-2"> Kollektionen </h2>
+<section class="grid center padded">
+    <h2 class="col-12 text-lg padded-b-2"> Kollektionen </h2>
 
-    <h3 class="editable text-sm margin-05">Käfer</h3>
-    <div class="grid col-12 horizontal-scroll">
+    <h3 class="editable text-md margin-05">Käfer</h3>
+    <div class="grid col-12 horizontal-scroll" id="lightgallery">
 
         {% for item in page.kaefer %}
 
-        <div class="col-2 margin-05">
+        <div class="col-2 margin-05 gallery-item" href="{{item.background_image}}">
             <div class="bg-image lazy portrait" style="background-image: url('{{item.background_image}}');"></div>
         </div>
 
@@ -128,13 +128,13 @@ seo:
     </div>
 </section>
 
-<section class="grid center padded padded-t-0 bg-dark">
-    <h3 class="editable text-sm margin-05">Drucke</h3>
-    <div class="grid col-12 horizontal-scroll">
+<section class="grid center padded padded-t-0">
+    <h3 class="editable text-md margin-05">Drucke</h3>
+    <div class="grid col-12 horizontal-scroll" id="lightgallery">
 
         {% for item in page.drucke %}
 
-        <div class="col-2 margin-05">
+        <div class="col-2 margin-05 gallery-item">
             <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
         </div>
 
@@ -143,13 +143,13 @@ seo:
     </div>
 </section>
 
-<section class="grid center padded padded-t-0 bg-dark">
-    <h3 class="editable text-sm margin-05">Drucke</h3>
-    <div class="grid col-12 horizontal-scroll">
+<section class="grid center padded padded-t-0">
+    <h3 class="editable text-md margin-05">Polaroids</h3>
+    <div class="grid col-12 horizontal-scroll" id="lightgallery">
 
         {% for item in page.drucke %}
 
-        <div class="col-2 margin-05">
+        <div class="col-2 margin-05 gallery-item">
             <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
         </div>
 
@@ -162,6 +162,8 @@ seo:
 
 <!-------------------------- Gallerie ----------------------------------------------->
 <section class="grid center padded">
+   <h2 class="col-12 text-lg padded-b-2"> Gallerie </h2>
+
     <div class="col-12 grid">
         {% for item in page.gallery %}
         
@@ -183,7 +185,7 @@ seo:
 
     <div class="col-12">
         <div class="center">
-            <h2 class="editable text-md padded-b"> Kontakt </h2> 
+            <h2 class="editable text-lg padded-b"> Kontakt </h2> 
         </div>
         <div class="capped-width-v-narrow">
             <form action="#" method="POST">
