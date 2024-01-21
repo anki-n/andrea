@@ -127,11 +127,11 @@ section { position: relative; }
 body {
     font-family: 'Caudex', serif;  /* Add your font here */ 
     font-weight: 500;
-    color: var(--dark);
+    color: var(--dark-featured);
   }
   
 h1 { 
-    font-size: 4rem; 
+    font-size: 10rem; 
     font-family: 'IM Fell DW Pica', serif;
 }
 
@@ -169,7 +169,6 @@ li {
 }
 
 
-
 /* Unique Typography Styles  */
 
 .left         { text-align: left; }
@@ -197,15 +196,17 @@ li {
 .font-weight-extra-bold { font-weight: 800;    }
 
 .dark-text            { color: var(--dark);  }
+.medium-featured-text { color: var(--medium-featured); }
 .light-text           { color: var(--light); }
 .accent-text          { color: var(--accent);}
+
 
 .subtle               { opacity: 0.8;       }
 .subtitle             { font-size: 0.8rem;  }  /* you might also wanna make that italic */
 .italic               { font-style: italic; }
 
 .border { 
-    border: 2px solid var(--dark);
+    border: 2px solid var(--dark-featured);
     padding: 1.5rem;
 }
 
@@ -231,13 +232,18 @@ li {
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 .bg-dark           { 
-    background-color: var(--dark); 
+    background-color: var(--dark-featured); 
     color: var(--light);
 }
 
 .bg-light           { 
     background-color: var(--light); 
-    color: var(--dark);
+    color: var(--dark-featured);
+}
+
+.bg-light-featured  { 
+    background-color: var(--light-featured); 
+    color: var(--dark-featured);
 }
 
 .bg-accent          { 
@@ -324,7 +330,7 @@ a.bg-image { display: block;}
 .portfolio-filter span {
     text-transform: uppercase; 
     padding: 0.5rem;
-    border: 1px solid var(--dark);
+    border: 1px solid var(--dark-featured);
 }
 
 .portfolio-filter span:hover {
@@ -333,7 +339,8 @@ a.bg-image { display: block;}
 
 .portfolio-filter .active {
     color: var(--light);
-    background-color: var(--dark);
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
 }
 
 
@@ -567,15 +574,15 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--dark);
+  color: var(--light);
 }
 
 header nav a {
-  border-bottom: 1px solid var(--light);
+  border-bottom: 1px solid var(--dark-featured);
 }
 
 header nav a:hover {
-  border-bottom: 1px solid var(--dark);
+  border-bottom: 1px solid var(--light);
 }
 
 

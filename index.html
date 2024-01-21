@@ -71,7 +71,7 @@ seo:
    hide-from-google: false
 ---
 <!---------------------------- Hero Banner ------------------------------------------>
-<section class="grid-middle banner banner-image tall-70 center">
+<section class="grid-middle banner banner-image tall-90 center">
     <h1 class="col-12 editable light-text">Artist Name</h1>
 </section>
 
@@ -91,7 +91,7 @@ seo:
 <section class="grid-spaceAround padded center">
     <div class="col-6_md-8_sm-12 padded-1 border">
         <p class="editable"> Nächste Ausstellung: </p>
-        <h2 class="editable text-md">Ausstellung Name</h2>
+        <h2 class="editable text-md medium-featured-text uppercase">Ausstellung Name</h2>
         <p class="editable"> Location Name </p>
         <p class="editable"> Straße 23, 05932 Stadt </p>
         <a href="https://www.artspring.berlin/kuenstler/" target="_blank"> www.eventname.de </a>
@@ -110,8 +110,8 @@ seo:
 
 
 <!-------------------------- Kollektionen ------------------------------------------->
-<section class="grid center padded">
-    <h2 class="col-12 text-lg padded-b-2"> Kollektionen </h2>
+<section class="grid center padded bg-light-featured" id="kollektionen">
+    <h2 class="col-12 text-lg padded-b-2"> KOLLEKTIONEN </h2>
 
     <h3 class="editable text-md margin-05">Käfer</h3>
     <div class="grid col-12 horizontal-scroll" id="lightgallery">
@@ -127,7 +127,7 @@ seo:
     </div>
 </section>
 
-<section class="grid center padded padded-t-0">
+<section class="grid center padded padded-t-0 bg-light-featured">
     <h3 class="editable text-md margin-05">Drucke</h3>
     <div class="grid col-12 horizontal-scroll" id="lightgallery">
 
@@ -142,7 +142,7 @@ seo:
     </div>
 </section>
 
-<section class="grid center padded padded-t-0">
+<section class="grid center padded padded-t-0 bg-light-featured">
     <h3 class="editable text-md margin-05">Polaroids</h3>
     <div class="grid col-12 horizontal-scroll" id="lightgallery">
 
@@ -160,10 +160,10 @@ seo:
 
 
 <!-------------------------- Gallerie ----------------------------------------------->
-<section class="grid center padded">
-   <h2 class="col-12 text-lg padded-b-2"> Gallerie </h2>
+<section class="grid-spaceAround center padded">
+   <h2 class="col-12 text-lg padded-b-2"> GALLERIE </h2>
 
-    <div class="grid-middle col-12">
+    <div class="grid-middle col-11">
         {% for item in page.gallery limit:7 %}
         
             <div class="col-3">
@@ -181,18 +181,16 @@ seo:
             </div>
 
     </div>
-    <div class="col-12 center padded-t-2">
-        <a href="/gallerie" class="button-dark"> Mehr</a>
-    </div>
+
 </section>
 
 
 <!-------------------------- Contact Form ------------------------------------------->
-<section class="grid-middle padded" id="kontakt"> 
+<section class="grid-middle padded bg-light-featured" id="kontakt"> 
 
     <div class="col-12">
         <div class="center">
-            <h2 class="editable text-lg padded-b"> Kontakt </h2> 
+            <h2 class="editable text-lg padded-b"> KONTAKT </h2> 
         </div>
         <div class="capped-width-v-narrow">
             <form action="#" method="POST">
