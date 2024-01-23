@@ -380,7 +380,7 @@ border: 2px solid green;
     font-size: 20px;
     line-height: 1;
     opacity: .75;
-    color: black;
+    color: var(--dark-featured);
 }
 
 .slick-dots {
@@ -395,7 +395,7 @@ border: 2px solid green;
 
 .slick-dots li button::before {
     font-size: 8px;
-    color: var(--dark);
+    color: var(--dark-featured);
 }
 
 .slick-dots li.slick-active button::before {
@@ -899,6 +899,9 @@ form .button:hover {
     .sm-padded-t-0 { padding-top: 0; }
     .sm-padded-b-0 { padding-bottom: 0; }
 
+    .sm-padded-t-05 { padding-top: 0.5rem; }
+    .sm-padded-b-05 { padding-bottom: 0.5rem; }
+
     .sm-margin-t-0 { margin-top: 0; }
     .sm-margin-b-0 { margin-bottom: 0; }
 
@@ -933,6 +936,11 @@ form .button:hover {
     .text-md    { font-size: 2rem;  }
     .text-sm    { font-size: 1.5rem;  }
 
+    .portfolio-filter span {
+        display: block;
+        margin: 0.2rem;
+    }
+
 }
 
 
@@ -957,7 +965,7 @@ form .button:hover {
     .text-xl    { font-size: 2.5rem;   }
     .text-lg    { font-size: 2rem;  }
     .text-md    { font-size: 1.8rem;  }
-    .text-sm    { font-size: 1.5rem;  }
+    .text-sm    { font-size: 1.3rem;  }
 
 }
 
