@@ -87,6 +87,8 @@ section { position: relative; }
 .padded-l-2 { padding-left: 2rem;   }
 .padded-r-2 { padding-right: 2rem;  }
 
+.padded-t-10  { padding-top: 10%;    }
+
 
 /* Margin Utility Classes */ 
 
@@ -351,11 +353,9 @@ a.bg-image { display: block;}
 }
 
 .slider-item {
-    /*padding: 0.5rem;*/
+    padding: 0.5rem;
     /* border: 2px solid orange; */
     display: none;
-    border: none;
-    background-color: var(--light);
 }
 
 .slider-item:first-child {
@@ -369,12 +369,10 @@ border: 2px solid green;
 
 .slick-prev {
     left: 2%;
-    margin-left: -1.5rem;
 }
 
 .slick-next {
     right: 2%;
-    margin-right: -1.5rem;
 }
 
 .slick-next::before, .slick-prev::before {
@@ -577,12 +575,9 @@ nav a:hover {
   color: var(--light);
 }
 
-header nav a {
-  border-bottom: 1px solid var(--dark-featured);
-}
 
 header nav a:hover {
-  border-bottom: 1px solid var(--light);
+  color: var(--accent);
 }
 
 
@@ -646,9 +641,10 @@ header nav a:hover {
   
 .mobile-menu {
     display: none; 
-    background-color: var(--dark);
+    background-color: var(--dark-featured);
     color: var(--light);
     padding: 15%;
+    padding-top: 20%;
     position: fixed; 
     z-index:3;
     top: 0;
@@ -660,17 +656,21 @@ header nav a:hover {
   
 .mobile-menu a {
     text-decoration: none; 
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: inherit; 
-    padding: 3%;
+    padding: 5% 1.2rem;
     display: block;
     font-weight: normal;
-    border-bottom: 1px solid var(--dark);
+    border: 1px solid var(--accent);
+    background-color: var(--accent);
+    color: var(--dark-featured);
+    margin: 0.7rem;
 }
 
 
 .mobile-menu a:hover {
-    border-bottom: 1px solid var(--light);
+    background-color: var(--dark-featured);
+    color: var(--accent);
 }
 
 
@@ -801,6 +801,12 @@ form .button:hover {
     width: 100%;
 }
 
+.kol-absolute {
+    position: absolute;
+    width: 100%;
+}
+
+
 /* ------------ Responsive Styles ------------------------------------------- */
 
 /* General CSS Responsive Styles (Apply everywhere unless overriden) */ 
@@ -920,6 +926,13 @@ form .button:hover {
 
     .slick-dots { bottom: -5%; }
 
+    h1 { font-size: 7rem;   }
+
+    .text-xl    { font-size: 3rem;   }
+    .text-lg    { font-size: 2.5rem;  }
+    .text-md    { font-size: 2rem;  }
+    .text-sm    { font-size: 1.5rem;  }
+
 }
 
 
@@ -938,6 +951,13 @@ form .button:hover {
     .md-padded  { padding: 7%; }
 
     .justify { text-align: left; }
+
+    h1 { font-size: 5rem;   }
+
+    .text-xl    { font-size: 2.5rem;   }
+    .text-lg    { font-size: 2rem;  }
+    .text-md    { font-size: 1.8rem;  }
+    .text-sm    { font-size: 1.5rem;  }
 
 }
 
