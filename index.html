@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Andrea Krämer Homepage
-banner_image: /uploads/artist-1.jpg
-banner-mob_image: /uploads/artist-1.jpg
-ausstellung_image: /uploads/artist-3.jpg
+banner_image: /uploads/kaefer-1.png
+banner-mob_image: /uploads/kaefer-1.png
 kaefer:
    -
       background_image: /uploads/kaefer-1.png
@@ -110,7 +109,7 @@ seo:
    hide-from-google: false
 ---
 <!---------------------------- Hero Banner ------------------------------------------>
-<section class="grid-middle banner banner-image tall-90 center">
+<section class="grid-middle banner banner-image tall-90 center bg-overlay">
     <h1 class="col-12 editable light-text">Andrea Krämer</h1>
 </section>
 
@@ -200,7 +199,7 @@ seo:
         {% for item in page.polaroids %}
 
         <div class="col-2_sm-12 margin-05 gallery-item" href="{{item.background_image}}">
-            <div class="bg-image lazy portrait" style="background-image: url('{{item.background_image}}');"></div>
+            <div class="bg-image lazy landscape" style="background-image: url('{{item.background_image}}');"></div>
         </div>
 
         {% endfor %}
@@ -211,7 +210,7 @@ seo:
       {% for item in page.polaroids %}
 
       <div class="col-12 slider-item">
-            <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
+            <div class="bg-image lazy landscape" style="background-image: url('{{item.background_image}}');"></div>
       </div>
 
       {% endfor %}

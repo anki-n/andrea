@@ -835,6 +835,7 @@ form .button:hover {
 
 @media(max-width:64em) {
 
+    .padded { padding: 7%; }
     .show-md { display: block; }
 	.hide-md { display: none;  }
 
@@ -874,6 +875,10 @@ form .button:hover {
         margin: auto;
     }
 
+    .mobile-menu {
+        padding: 15%;
+        padding-top: 5%;
+    }
 
 }
 
@@ -946,6 +951,8 @@ form .button:hover {
         display: block;
         margin: 0.2rem;
     }
+
+    .logo { font-size: 1.5rem; }
 
 }
 
