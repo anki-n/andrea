@@ -687,6 +687,11 @@ footer nav a {
     text-decoration: none;
 }
 
+footer p a {
+    text-decoration: none;
+    border-bottom: 0;
+}
+
 footer a:hover {
     color: var(--accent);
 }
@@ -703,6 +708,7 @@ textarea {
     font-size: 0.9rem;
     border: none;
     border: 2px solid var(--dark);
+    border-radius: none;
 }
 
 input:focus, 
