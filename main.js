@@ -114,20 +114,6 @@ lightGallery(document.getElementById('lightgallery'), {
     download: false
 });
 
-lightGallery(document.getElementById('lightgallery-1'), {
-  speed: 500,
-  download: false
-});
-
-lightGallery(document.getElementById('lightgallery-2'), {
-  speed: 500,
-  download: false
-});
-
-lightGallery(document.getElementById('lightgallery-3'), {
-  speed: 500,
-  download: false
-});
 
 // Filterable gallery
 $('#portfolio-filter span').click(function(){
