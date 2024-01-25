@@ -446,6 +446,7 @@ li {
 .text-lg    { font-size: 3rem;    }
 .text-md    { font-size: 2rem;    }
 .text-sm    { font-size: 1.7rem;  }
+.text-xs    { font-size: 1.2rem;  }
 
 
 .font-weight-light      { font-weight: 200;    }
