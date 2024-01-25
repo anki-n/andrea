@@ -910,6 +910,11 @@ form .button:hover {
     .sm-padded-t-0 { padding-top: 0; }
     .sm-padded-b-0 { padding-bottom: 0; }
 
+    .sm-padded-tb-05 { 
+        padding-top: 0.5rem; 
+        padding-bottom: 0.5rem;
+    }
+
     .sm-padded-t-05 { padding-top: 0.5rem; }
     .sm-padded-b-05 { padding-bottom: 0.5rem; }
 
@@ -952,7 +957,10 @@ form .button:hover {
         margin: 0.2rem;
     }
 
-    .logo { font-size: 1.5rem; }
+    .mobile-menu {
+        padding: 15%;
+        padding-top: 10%;
+    }
 
 }
 
@@ -979,6 +987,8 @@ form .button:hover {
     .text-lg    { font-size: 2rem;  }
     .text-md    { font-size: 1.8rem;  }
     .text-sm    { font-size: 1.3rem;  }
+
+    .logo { font-size: 1.5rem; }
 
 }
 
