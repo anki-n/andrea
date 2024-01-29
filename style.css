@@ -13,6 +13,7 @@ footer {border: 2px solid green; } */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    align-items: flex-end;
 }
   
 
@@ -496,12 +497,6 @@ li {
 .sticky     { position: sticky;   }
 
 
-.kollektion-parent { position: relative; }
-.kollektion-child { 
-    position: absolute;
-    bottom: 1px; 
-}
-
 /* ------------ Backgrounds & Background Images  ----------------------- */
 .bg-dark           { 
     background-color: var(--dark-featured); 
@@ -818,6 +813,18 @@ button {
     padding: 1rem;
 }
 
+hr.short {
+    border: 1px solid var(--dark);
+    width: 4rem;
+    margin: 1rem 0;
+}
+
+hr.short.center {
+    margin:auto;
+    margin: 2rem auto;
+}
+
+
 /* suggested additional styles 
 - .button-inverted, .button-subtle, .button-lg  */
 
@@ -1077,10 +1084,9 @@ form .button:hover {
     width: 100%;
 }
 
-.kol-absolute {
-    position: absolute;
-    width: 100%;
-}
+
+.flex-start div { align-items: flex-start; }
+.flex-end { align-items: flex-end; }
 
 
 /* ------------ Responsive Styles ------------------------------------------- */
