@@ -129,6 +129,15 @@ lightGallery(document.getElementById('lightgallery-3'), {
   download: false
 });
 
+lightGallery(document.getElementById('lightgallery-4'), {
+  speed: 500,
+  download: false
+});
+
+lightGallery(document.getElementById('lightgallery-5'), {
+  speed: 500,
+  download: false
+});
 
 // Filterable gallery
 $('#portfolio-filter span').click(function(){
