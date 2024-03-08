@@ -110,8 +110,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Lightgallery
 lightGallery(document.getElementById('lightgallery'), {
-    speed: 500,
-    download: false
+  speed: 500,
+  download: false
 });
 
 lightGallery(document.getElementById('lightgallery-1'), {
@@ -139,6 +139,17 @@ lightGallery(document.getElementById('lightgallery-5'), {
   download: false
 });
 
+lightGallery(document.getElementById('lightgallery-6'), {
+  speed: 500,
+  download: false
+});
+
+lightGallery(document.getElementById('lightgallery-7'), {
+  speed: 500,
+  download: false
+});
+
+
 // Filterable gallery
 $('#portfolio-filter span').click(function(){
     
@@ -149,7 +160,7 @@ $('#portfolio-filter span').click(function(){
   $(this).addClass('active');
 
   // get the name of the category from this <span>, remove up to two spaces from the text and replace them with dashes, and make it lowercase 
-  var filterVal = $(this).text().replace(' ','-').replace(' ','-').toLowerCase();
+  var filterVal = $(this).text().replace(' ','-').replace(' ','-').replace(' ','-').toLowerCase();
   
   //console log
   console.log ('filterVal has been set ' + filterVal);
@@ -181,7 +192,7 @@ $('#portfolio-filter span').click(function(){
 
 // Slick Carousel
 $('.slider-container').slick({
-	autoplay: true, // Do we want it to autoplay? true or false
+	autoplay: false, // Do we want it to autoplay? true or false
 	autoplaySpeed: 3000, // How long between each slide when auto-playing
 	speed: 1000, // How fast is the transition in milliseconds
 	arrows: false, // Do you want to show arrows to trigger each slide
