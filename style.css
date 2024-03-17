@@ -585,13 +585,13 @@ a.bg-image { display: block;}
 
 
 /* Filter navigation */
-.portfolio-filter span {
+.portfolio-filter div {
     text-transform: uppercase; 
     padding: 0.5rem;
     border: 1px solid var(--dark-featured);
 }
 
-.portfolio-filter span:hover {
+.portfolio-filter div:hover {
     cursor: pointer;
 }
 
