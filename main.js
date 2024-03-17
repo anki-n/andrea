@@ -151,7 +151,7 @@ lightGallery(document.getElementById('lightgallery-7'), {
 
 
 // Filterable gallery
-$('#portfolio-filter span').click(function(){
+$('#portfolio-filter div').click(function(){
     
   // Remove class 'active' from any <span> that is currently active 
   $('#portfolio-filter .active').removeClass('active');
