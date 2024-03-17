@@ -588,7 +588,6 @@ a.bg-image { display: block;}
 .portfolio-filter div {
     text-transform: uppercase; 
     padding: 0.5rem;
-    margin: 0.3rem;
     border: 1px solid var(--dark-featured);
     display: inline-block;
 }
@@ -1151,6 +1150,10 @@ form .button:hover {
         overflow-x: auto;
         flex-wrap: nowrap;
       } 
+
+      .portfolio-filter div {
+        margin: 0.3rem;
+      }
 
 }
 
