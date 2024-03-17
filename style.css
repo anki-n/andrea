@@ -588,6 +588,7 @@ a.bg-image { display: block;}
 .portfolio-filter div {
     text-transform: uppercase; 
     padding: 0.5rem;
+    margin: 0.3rem;
     border: 1px solid var(--dark-featured);
 }
 
@@ -1091,7 +1092,6 @@ form .button:hover {
 
 .inline { 
     display: inline-block;
-    vertical-align: top;
 }
 
 
@@ -1224,8 +1224,8 @@ form .button:hover {
     .text-sm    { font-size: 1.5rem;  }
 
     .portfolio-filter div {
-        display: inline-block;
-        margin: 0.2rem;
+        display: block;
+        margin: 0.3rem;
     }
 
     .mobile-menu {
