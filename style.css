@@ -1223,8 +1223,8 @@ form .button:hover {
     .text-md    { font-size: 2rem;  }
     .text-sm    { font-size: 1.5rem;  }
 
-    .portfolio-filter span {
-        display: block;
+    .portfolio-filter div {
+        display: inline-block;
         margin: 0.2rem;
     }
 
