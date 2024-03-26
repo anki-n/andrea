@@ -590,6 +590,7 @@ a.bg-image { display: block;}
     padding: 0.5rem;
     border: 1px solid var(--dark-featured);
     display: inline-block;
+    margin: 0.3rem;
 }
 
 .portfolio-filter div:hover {
@@ -1150,10 +1151,6 @@ form .button:hover {
         overflow-x: auto;
         flex-wrap: nowrap;
       } 
-
-      .portfolio-filter div {
-        margin: 0.3rem;
-      }
 
 }
 
