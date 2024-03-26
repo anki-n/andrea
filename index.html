@@ -135,7 +135,7 @@ duschen-1-2:
    -
       background_image: /uploads/polaroid-10.png
       aspect-ratio: portrait
-collagen:
+stueckwerke:
    -
       background_image: /uploads/strukturen-gelb-1.png
       aspect-ratio: portrait
@@ -194,11 +194,11 @@ kaefer:
       aspect-ratio: portrait
 archiv:
    -
-   background_image: /uploads/strukturen-rot-3.png
-   aspect-ratio: portrait
+      background_image: /uploads/strukturen-rot-3.png
+      aspect-ratio: portrait
    -
-   background_image: /uploads/strukturen-sw-3.png
-   aspect-ratio: portrait
+      background_image: /uploads/strukturen-sw-3.png
+      aspect-ratio: portrait
 gallery:
    -
       background_image: /uploads/kaefer-1.png
@@ -414,10 +414,10 @@ seo:
 </section>
 
 <section class="grid center padded padded-t-0 bg-light-featured">
-   <h3 class="editable text-md margin-05">Collagen </h3>
+   <h3 class="editable text-md margin-05">Stückwerke </h3>
    <div class="grid col-12 horizontal-scroll hide-sm" id="lightgallery-13">
 
-       {% for item in page.collagen %}
+       {% for item in page.stueckwerke %}
 
        <div class="col-2_sm-12 margin-05 gallery-item" href="{{item.background_image}}">
            <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
@@ -428,7 +428,7 @@ seo:
    </div>
 
    <div class="col-12 grid slider-container show-sm" id="lightgallery-14"> 
-     {% for item in page.collagen %}
+     {% for item in page.stueckwerke %}
 
      <div class="col-12 slider-item" href="{{item.background_image}}">
            <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
