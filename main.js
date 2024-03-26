@@ -184,6 +184,36 @@ lightGallery(document.getElementById('lightgallery-14'), {
   download: false
 });
 
+lightGallery(document.getElementById('lightgallery-15'), {
+  speed: 500,
+  download: false
+});
+
+lightGallery(document.getElementById('lightgallery-16'), {
+  speed: 500,
+  download: false
+});
+
+lightGallery(document.getElementById('lightgallery-17'), {
+  speed: 500,
+  download: false
+});
+
+lightGallery(document.getElementById('lightgallery-18'), {
+  speed: 500,
+  download: false
+});
+
+lightGallery(document.getElementById('lightgallery-19'), {
+  speed: 500,
+  download: false
+});
+
+lightGallery(document.getElementById('lightgallery-20'), {
+  speed: 500,
+  download: false
+});
+
 
 // Filterable gallery
 $('#portfolio-filter div').click(function(){
