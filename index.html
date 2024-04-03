@@ -192,16 +192,16 @@ stueckwerke:
       aspect-ratio: square
 naturstuecke:
    -
-      background_image: /uploads/
+      background_image: 
       aspect-ratio: portrait
    -
-      background_image: /uploads/
+      background_image: 
       aspect-ratio: portrait
    -
-      background_image: /uploads/
+      background_image: 
       aspect-ratio: portrait
    -
-      background_image: /uploads/
+      background_image: 
       aspect-ratio: portrait
 kaefer:
    -
@@ -426,10 +426,10 @@ seo:
 </section>
 
 <section class="grid center padded padded-t-0 bg-light-featured">
-   <h3 class="editable text-md margin-05">Duschen in Berlin I und II </h3>
-   <div class="grid col-12 horizontal-scroll hide-sm" id="lightgallery-11">
+   <h3 class="editable text-md margin-05">Naturstücke </h3>
+   <div class="grid col-12 horizontal-scroll hide-sm" id="lightgallery-15">
 
-       {% for item in page.duschen-1-2 %}
+       {% for item in page.naturstuecke %}
 
        <div class="col-2_sm-12 margin-05 gallery-item" href="{{item.background_image}}">
            <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
@@ -439,8 +439,8 @@ seo:
 
    </div>
 
-   <div class="col-12 grid slider-container show-sm" id="lightgallery-12"> 
-     {% for item in page.duschen-1-2 %}
+   <div class="col-12 grid slider-container show-sm" id="lightgallery-16"> 
+     {% for item in page.naturstuecke %}
 
      <div class="col-12 slider-item" href="{{item.background_image}}">
            <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
@@ -476,10 +476,10 @@ seo:
 </section>
 
 <section class="grid center padded padded-t-0 bg-light-featured">
-   <h3 class="editable text-md margin-05">Naturstücke </h3>
-   <div class="grid col-12 horizontal-scroll hide-sm" id="lightgallery-15">
+   <h3 class="editable text-md margin-05">Duschen in Berlin I und II </h3>
+   <div class="grid col-12 horizontal-scroll hide-sm" id="lightgallery-11">
 
-       {% for item in page.naturstuecke %}
+       {% for item in page.duschen-1-2 %}
 
        <div class="col-2_sm-12 margin-05 gallery-item" href="{{item.background_image}}">
            <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
@@ -489,8 +489,33 @@ seo:
 
    </div>
 
-   <div class="col-12 grid slider-container show-sm" id="lightgallery-16"> 
-     {% for item in page.naturstuecke %}
+   <div class="col-12 grid slider-container show-sm" id="lightgallery-12"> 
+     {% for item in page.duschen-1-2 %}
+
+     <div class="col-12 slider-item" href="{{item.background_image}}">
+           <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
+     </div>
+
+     {% endfor %}
+   </div>
+</section>
+
+<section class="grid center padded padded-t-0 bg-light-featured">
+   <h3 class="editable text-md margin-05">Fundsachen </h3>
+   <div class="grid col-12 horizontal-scroll hide-sm" id="lightgallery-21">
+
+       {% for item in page.fundsachen %}
+
+       <div class="col-2_sm-12 margin-05 gallery-item" href="{{item.background_image}}">
+           <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
+       </div>
+
+       {% endfor %}
+
+   </div>
+
+   <div class="col-12 grid slider-container show-sm" id="lightgallery-22"> 
+     {% for item in page.fundsachen %}
 
      <div class="col-12 slider-item" href="{{item.background_image}}">
            <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
@@ -502,7 +527,7 @@ seo:
 
 <section class="grid center padded padded-t-0 bg-light-featured">
    <h3 class="editable text-md margin-05">Käferprojekt </h3>
-   <p class="col-12 left editable margin-05">*inspiriert durch die Papierinstallation „Tok Tokkies“ von <a href="https://www.instagram.com/druck_grafiksandraschmidt/">Sandra Schmidt. Den farbigen Hintergrund des Bild Nr. 3 gestaltete <a href="https://www.eva-zimnoch.de/">Eva Zimnoch</a>. </a></p>
+   <p class="col-12 left editable margin-05">*inspiriert durch die Papierinstallation „Tok Tokkies“ von <a href="https://www.instagram.com/druck_grafiksandraschmidt/">Sandra Schmidt</a>. Den farbigen Hintergrund des Bild Nr. 3 gestaltete <a href="https://www.eva-zimnoch.de/">Eva Zimnoch</a>. </p>
    <div class="grid col-12 horizontal-scroll hide-sm" id="lightgallery-17">
 
        {% for item in page.kaefer %}

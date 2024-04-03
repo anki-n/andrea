@@ -214,6 +214,16 @@ lightGallery(document.getElementById('lightgallery-20'), {
   download: false
 });
 
+lightGallery(document.getElementById('lightgallery-21'), {
+  speed: 500,
+  download: false
+});
+
+lightGallery(document.getElementById('lightgallery-22'), {
+  speed: 500,
+  download: false
+});
+
 
 // Filterable gallery
 $('#portfolio-filter div').click(function(){
