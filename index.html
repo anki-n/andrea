@@ -679,10 +679,10 @@ seo:
 </section>
 
 <!-------------------------- Gallerie ----------------------------------------------->
-<section class="grid-spaceAround center padded">
+<section class="grid-spaceAround center padded hide-md">
    <h2 class="col-12 text-lg padded-b-2 sm-padded-b-0"> GALERIE </h2>
 
-    <div class="grid-middle col-11 hide-md">
+    <div class="grid-middle col-11">
         {% for item in page.gallery limit:7 %}
         
             <div class="col-3_md-6">
@@ -703,7 +703,12 @@ seo:
 
     </div>
 
-    <div class="grid-middle col-12 show-md">
+</section>
+
+<section class="grid-spaceAround center padded show-md">
+   <h2 class="col-12 text-lg padded-b-2 sm-padded-b-0"> GALERIE </h2>
+
+    <div class="grid-middle col-12">
       {% for item in page.gallery-mob limit:7 %}
       
           <div class="col-3_md-6">
