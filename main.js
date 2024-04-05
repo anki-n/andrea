@@ -235,7 +235,7 @@ $('#portfolio-filter div').click(function(){
   $(this).addClass('active');
 
   // get the name of the category from this <span>, remove up to two spaces from the text and replace them with dashes, and make it lowercase 
-  var filterVal = $(this).text().replace(' ','-').replace(' ','-').replace(' ','-').toLowerCase();
+  var filterVal = $(this).text().replace(' ','-').replace(' ','-').replace(' ','-').replace(' ','-').replace(' ','-').toLowerCase();
   
   //console log
   console.log ('filterVal has been set ' + filterVal);
