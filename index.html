@@ -325,19 +325,36 @@ kaefer:
 archiv:
 gallery:
    -
-      background_image: /uploads/farbe10.jpg
-   -
       background_image: /uploads/kaefer2.jpg
    -
       background_image: /uploads/farbe4.jpg
    -
       background_image: /uploads/duschen5.jpg
    -
-      background_image: /uploads/farbe1.jpg
+      background_image: /uploads/farbe10.jpg
+   -
+      background_image: /uploads/farbe6.jpg
    -
       background_image: /uploads/schoeneberg.jpg
    -
+      background_image: /uploads/farbe1.jpg
+   -
+      background_image: /uploads/land1.jpg
+gallery-mob:
+   -
+      background_image: /uploads/kaefer2.jpg
+   -
+      background_image: /uploads/farbe4.jpg
+   -
+      background_image: /uploads/farbe10.jpg
+   -
+      background_image: /uploads/duschen5.jpg
+   -
       background_image: /uploads/farbe6.jpg
+   -
+      background_image: /uploads/schoeneberg.jpg
+   -
+      background_image: /uploads/farbe1.jpg
    -
       background_image: /uploads/land1.jpg
 seo:
@@ -665,17 +682,17 @@ seo:
 <section class="grid-spaceAround center padded">
    <h2 class="col-12 text-lg padded-b-2 sm-padded-b-0"> GALERIE </h2>
 
-    <div class="grid-middle col-11">
+    <div class="grid-middle col-11 hide-md">
         {% for item in page.gallery limit:7 %}
         
-            <div class="col-3_md-6">
+            <div class="col-3">
                 <div class="bg-image lazy square" style="background-image: url('{{item.background_image}}');"></div>
             </div>
         
         {% endfor %}
         
         {% for item in page.gallery limit:1 offset:7 %}
-            <div class="col-3_md-6">
+            <div class="col-3">
                <a href="galerie">
                   <div class="grid-middle square bg-image bg-zoom bg-overlay relative" style="background-image: url('{{item.background_image}}');">
                      <h3 class="col-12 editable text-sm gallery-absolute light-text"> Mehr anzeigen </h3>
@@ -685,6 +702,27 @@ seo:
          {% endfor %}
 
     </div>
+
+    <div class="grid-middle col-11 show-md">
+      {% for item in page.gallery-mob limit:7 %}
+      
+          <div class="col-6">
+              <div class="bg-image lazy square" style="background-image: url('{{item.background_image}}');"></div>
+          </div>
+      
+      {% endfor %}
+      
+      {% for item in page.gallery-mob limit:1 offset:7 %}
+          <div class="col-6">
+             <a href="galerie">
+                <div class="grid-middle square bg-image bg-zoom bg-overlay relative" style="background-image: url('{{item.background_image}}');">
+                   <h3 class="col-12 editable text-sm gallery-absolute light-text"> Mehr anzeigen </h3>
+                </div>
+             </a>
+          </div>
+       {% endfor %}
+
+  </div>
 
 </section>
 
