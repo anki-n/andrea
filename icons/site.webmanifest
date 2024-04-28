@@ -1,6 +1,6 @@
 {
-    "name": "Cassion Creative",
-    "short_name": "Cassion Creative",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
             "src": "/icons/android-chrome-192x192.png",
@@ -8,12 +8,12 @@
             "type": "image/png"
         },
         {
-            "src": "/icons/android-chrome-512x512.png",
-            "sizes": "512x512",
+            "src": "/icons/android-chrome-384x384.png",
+            "sizes": "384x384",
             "type": "image/png"
         }
     ],
-    "theme_color": "#fefbf0",
-    "background_color": "#fefbf0",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "standalone"
 }
