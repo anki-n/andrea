@@ -1,15 +1,15 @@
-seo: 
+seo:
   site_name: Andrea Krämer
   title: Andrea Krämer
-  description: 
-  keywords: 
-  favicon_image: 
-social: 
+  description:
+  keywords:
+  favicon_image:
+social:
   instagram_username: andrea_kraemer_art
-design: 
+design:
   dark-featured_color: '#060b23'
   medium-featured_color: '#0f1a55'
   light-featured_color: '#dfe3f9'
-  dark_color: 'rgb(27,27,27)'
+  dark_color: '#1b1b1b'
   light_color: '#ffffff'
   accent_color: '#9c9e9b'
