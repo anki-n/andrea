@@ -3,6 +3,119 @@ layout: default
 title: Andrea Krämer Homepage
 banner_image: /uploads/kaufhof.jpg
 banner-mob_image: /uploads/kaufhof.jpg
+linie:
+  - 
+      background-image:/uploads/linie1.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie2.jpg 
+      aspect-ratio: portrait  
+  - 
+      background-image:/uploads/linie3.jpeg 
+      aspect-ratio: portrait  
+  - 
+      background-image:/uploads/linie4.jpeg 
+      aspect-ratio: portrait  
+  - 
+      background-image:/uploads/linie5.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie6.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie7.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie8.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie9.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie10.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie11.jpg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie12.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie13.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie14.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie15.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie16.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie17.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie18.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie19.jpeg 
+      aspect-ratio: portrait
+  - 
+      background-image:/uploads/linie20.jpeg 
+      aspect-ratio: portrait
+verloren:
+  - 
+      background-image:/uploads/verloren1.jpg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren2.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren3.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren4.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren5.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren6.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren7.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren8.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren9.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren10.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren11.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren12.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren13.jpg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren14.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren15.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren16.jpeg 
+      aspect-ratio: square
+  - 
+      background-image:/uploads/verloren17.jpg 
+      aspect-ratio: square
 zuckertanz:
    -
       background_image: /uploads/zucker1.jpg
@@ -473,7 +586,7 @@ seo:
     <div class="col-6_md-8_sm-12 padded-1 border">
          <p class="editable">
              Nächste Ausstellungen:
-         </p>
+         </p><br />
          <h2 class="editable text-md medium-featured-text uppercase">Openprintexchance 2026</h2>
          <p class="editable">
             <br /><a href="https://openprintexchange.com/products/fromtheserieslittletreasuresweorbitthesun-by-andreakrmer" target="_blank" class="editable">https://openprintexchange.com/</a> 
@@ -483,7 +596,7 @@ seo:
 
          <hr class="short center" />
 
-         <h2 class="editable text-md medium-featured-text uppercase margin-t-1">„Gülden“- Gemeinschaftsausstellung im Kulturhaus Baumschulenweg Veranstaltende: „baume konnektiv“
+         <h2 class="editable text-md medium-featured-text uppercase margin-t-1">„Gülden“ im Kulturhaus Baumschulenweg Veranstaltende: „baume konnektiv“
              <br>
          </h2>
 
@@ -520,10 +633,10 @@ seo:
 <section class="grid center padded bg-light-featured" id="serien">
     <h2 class="editable col-12 text-lg padded-b-2 sm-padded-b-05"> SERIEN </h2>
 
-   <h3 class="editable text-md margin-05">Fundsachen </h3>
+   <h3 class="editable text-md margin-05">Die Kraft der Linie </h3>
    <div class="grid col-12 horizontal-scroll hide-sm" id="lightgallery-21">
 
-         {% for item in page.fundsachen %}
+         {% for item in page.linie %}
 
          <div class="col-2_sm-12 margin-05 gallery-item" href="{{item.background_image}}">
             <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
@@ -534,7 +647,7 @@ seo:
    </div>
 
    <div class="col-12 grid slider-container show-sm" id="lightgallery-22"> 
-      {% for item in page.fundsachen %}
+      {% for item in page.linie %}
 
       <div class="col-12 slider-item" href="{{item.background_image}}">
             <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
@@ -545,6 +658,58 @@ seo:
 
 </section>
    
+<section class="grid center padded padded-t-0 bg-light-featured">
+    <h3 class="editable text-md margin-05">Verloren </h3>
+    <div class="grid col-12 horizontal-scroll hide-sm" id="lightgallery-15">
+
+       {% for item in page.verloren %}
+
+       <div class="col-2_sm-12 margin-05 gallery-item" href="{{item.background_image}}">
+           <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
+       </div>
+
+       {% endfor %}
+
+   </div>
+
+   <div class="col-12 grid slider-container show-sm" id="lightgallery-16"> 
+     {% for item in page.verloren %}
+
+     <div class="col-12 slider-item" href="{{item.background_image}}">
+           <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
+     </div>
+
+     {% endfor %}
+   </div>
+    
+</section>
+
+<section class="grid center padded padded-t-0 bg-light-featured">
+    <h3 class="editable text-md margin-05">Fundsachen </h3>
+    <div class="grid col-12 horizontal-scroll hide-sm" id="lightgallery-15">
+
+       {% for item in page.fundsachen %}
+
+       <div class="col-2_sm-12 margin-05 gallery-item" href="{{item.background_image}}">
+           <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
+       </div>
+
+       {% endfor %}
+
+   </div>
+
+   <div class="col-12 grid slider-container show-sm" id="lightgallery-16"> 
+     {% for item in page.fundsachen %}
+
+     <div class="col-12 slider-item" href="{{item.background_image}}">
+           <div class="bg-image lazy {{ item.aspect-ratio }}" style="background-image: url('{{item.background_image}}');"></div>
+     </div>
+
+     {% endfor %}
+   </div>
+    
+</section>
+
 <section class="grid center padded padded-t-0 bg-light-featured">
     <h3 class="editable text-md margin-05">Naturstücke </h3>
     <div class="grid col-12 horizontal-scroll hide-sm" id="lightgallery-15">
